@@ -17,7 +17,7 @@ class Program
             cube = rem * rem * rem;
             result += cube;
             num = num / 10;
-
+//what is result
         }
 
         num = temp;
