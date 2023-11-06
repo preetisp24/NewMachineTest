@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\Images\4.jpg" />
+    <Content Remove="wwwroot\Images\5.jpg" />
+    <Content Remove="wwwroot\Images\6.jpg" />
+    <Content Remove="wwwroot\Images\Mens\M1.jpg" />
+    <Content Remove="wwwroot\Images\Mens\M2.jpg" />
+    <Content Remove="wwwroot\Images\Mens\M3.jpg" />
+    <Content Remove="wwwroot\Images\Women\4.jpg" />
+    <Content Remove="wwwroot\Images\Women\W1.jpg" />
+    <Content Remove="wwwroot\Images\Women\W2.jpg" />
+    <Content Remove="wwwroot\Images\Women\W3.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Images\4.jpg" />
+    <None Include="wwwroot\Images\5.jpg" />
+    <None Include="wwwroot\Images\6.jpg" />
+    <None Include="wwwroot\Images\Mens\M1.jpg" />
+    <None Include="wwwroot\Images\Mens\M2.jpg" />
+    <None Include="wwwroot\Images\Mens\M3.jpg" />
+    <None Include="wwwroot\Images\Women\4.jpg" />
+    <None Include="wwwroot\Images\Women\W1.jpg" />
+    <None Include="wwwroot\Images\Women\W2.jpg" />
+    <None Include="wwwroot\Images\Women\W3.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.13" />
+  </ItemGroup>
+
+</Project>

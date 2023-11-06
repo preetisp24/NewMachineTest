@@ -1,0 +1,43 @@
+﻿@model Banking_Application.Models.AccountDetails
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>AccountDetails</h4>
+    <hr />
+    <table>
+        <tr>
+            <th>AccountNumber</th>
+            <td>@Model.AccountNumber</td>
+        </tr>
+        <tr>
+            <th>FirstName</th>
+            <td>@Model.FirstName</td>
+        </tr>
+        <tr>
+            <th>LastName</th>
+            <td>@Model.LastName</td>
+        </tr>
+        <tr>
+            <th>MobileNo</th>
+            <td>@Model.MobileNo</td>
+        </tr>
+        <tr>
+            <th>InterestRate</th>
+            <td>@Model.InterestRate</td>
+        </tr>
+        <tr>
+            <th>account</th>
+            <td>@Model.account</td>
+        </tr>
+       
+    </table>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Acctid">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

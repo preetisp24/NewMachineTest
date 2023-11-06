@@ -1,0 +1,73 @@
+﻿@model IEnumerable<DepEmpClient.Models.Employee>
+@*@model IEnumerable<dynamic>*@
+
+<h1>Index</h1>
+@{
+
+}
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Employee</th>
+            <th>Department</th>
+            <th>Salary</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+
+            <tr>
+
+                <td>@item.EmployeeName</td>
+                <td>@item.DepartmentName</td>
+                <td>@item.Salary</td>
+            
+
+            </tr>
+   
+        }
+       
+        <tr>
+            <td colspan="2"><strong>Total Salary of All Department</strong></td>
+            <td><strong>@Model.Sum(item => item.TotalSalary)</strong></td>
+        </tr>
+
+       
+
+
+
+
+    </tbody>
+</table>
+@*<table>
+    <thead>
+        <tr>
+            <th>Department ID</th>
+            <th>Total Salary</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in ViewBag.totaldepsalary)
+        {
+            <tr>
+                <td>@item.DepartmentId</td>
+                <td>@item.TotalSalary</td>
+            </tr>
+        }
+    </tbody>
+</table>*@
+
+@* <style>
+                    .highlighted-text{
+                        color:red
+                    }
+                    .highlighted-text1{
+                        color:green
+                    }
+                </style>*@

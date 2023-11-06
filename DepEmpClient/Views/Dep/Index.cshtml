@@ -1,0 +1,29 @@
+﻿@model List<Department>
+
+<table>
+    <thead>
+        <tr>
+            <th>Employee Name</th>
+            <th>Salary</th>
+            <th>Department</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var department in Model)
+        {
+            foreach (var employee in department.Employees)
+            {
+                <tr>
+                    <td>@employee.EmployeeName</td>
+                    <td>@employee.Salary</td>
+                    <td>@employee.DepartmentName</td>
+                </tr>
+            }
+
+            <tr>
+                <td colspan="2">Total Salary:</td>
+                <td>@department.TotalSalary</td>
+            </tr>
+        }
+    </tbody>
+</table>
